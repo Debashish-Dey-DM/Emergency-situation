@@ -46,7 +46,7 @@ const Taskbar = () => {
                     style={{ maxHeight: '100px' }}
                     navbarScroll
                     >
-                    <Nav.Link className="nav-link" href="/demo" onClick={logout}>{loggedIn? 'Logout': 'Login'}</Nav.Link>
+                   
                     <Nav.Link className="nav-link" href="/">Home</Nav.Link>
                     {loggedIn &&<Nav.Link className="nav-link" href="/profile">My Profile</Nav.Link>}
                     <Nav.Link className="nav-link" href="admin">Admins</Nav.Link>
@@ -54,6 +54,8 @@ const Taskbar = () => {
                     <Nav.Link className="nav-link" href="/police_stations">Police Stations</Nav.Link>
                     <Nav.Link className="nav-link" href="/fire_services">Fire Services</Nav.Link>
                     <Nav.Link className="nav-link" href="/get_service">Get Services</Nav.Link>
+                    
+                     <Nav.Link className="nav-link" href="/login" onClick={logout}>{loggedIn? 'Logout': 'Login'}</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Navbar>

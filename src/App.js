@@ -19,7 +19,7 @@ import EditUser from './pages/editUser'
 import Login from './pages/Login';
 import Signup2 from './pages/Signup2';
 import {Switch, BrowserRouter as Router, Route} from 'react-router-dom';
-
+import EditProfile from './pages/editProfile';
 
 
 const App = () => {
@@ -98,10 +98,15 @@ const App = () => {
       <Taskbar/>
        <Login/>
       </Route>
-<Route exact path="/signup2" >
+    <Route exact path="/signup2" >
       <Taskbar/>
        <Signup2/>
-      </Route>
+          </Route>
+        <Route exact path="/editProfile" >
+      <Taskbar/>
+       <EditProfile/>
+          </Route>
+          
       </Switch>
       </Router>
       
